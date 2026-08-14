@@ -1,0 +1,247 @@
+/* ==========================================
+   1. Reset & Global Styles
+   ========================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Sarabun', 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5; /* แก้เป็นสีดำเข้มตามต้นฉบับ */
+    color: #fafafa;
+}
+
+/* ==========================================
+   2. Header & Navigation
+   ========================================== */
+.main-header {
+    background-color: #fbfcff;
+    width: 100%;
+    overflow: hidden;
+    padding: 20; /* ลบ padding 30px ออก เพื่อไม่ให้ป้ายอ้วนหนาเกินไป */
+
+    margin-bottom: 12px;                  /* ระยะห่างระหว่างป้ายกับแถบสีฟ้า */
+    box-shadow: 0 12px 0 0 #ffffff;       /* สร้างแถบสีขาวเต็มความกว้างคั่นไว้ */
+}
+
+/* ปรับให้รูปแบนเนอร์ Header ยืดเต็มความกว้างสัดส่วนพอดี ไม่เบี้ยว ไม่อ้วน */
+.main-header .img-container {
+    width: 100%;
+}
+
+.main-header .img-container img {
+    width: 100%;
+    height: auto;
+    max-height: 120px; /* คุมความสูงไม่ให้หนาอ้วนเกินไป */
+    object-fit: cover;  /* ครอปสัดส่วนภาพให้สวยงามพอดี */
+    display: block;
+}
+
+.nav-bar {
+    background-color: #3853aa; /* สีฟ้าของแถบเมนู */
+    padding: 10px 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+/* ==========================================
+   3. Main Content Area (Layout)
+   ========================================== */
+.container {
+    display: flex;
+    gap: 12px;
+    padding: 12px;
+    background-color: #f9fafd; /* แก้เป็นสีดำเข้มเพื่อเชื่อมต่อขอบระหว่างกล่อง */
+    align-items: stretch;
+}
+
+/* ฝั่งซ้าย (การ์ดเนื้อหา + แผนที่) */
+.left-column {
+    flex: 2.3;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* ฝั่งขวา (ฟอร์มสมัครสมาชิก) */
+.right-column {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* ==========================================
+   4. Cards & Inner Content
+   ========================================== */
+.card {
+    background-color: #8067f1; /* สีฟ้าของแผงเนื้อหา */
+    padding: 18px 20px;
+    border-radius: 0px;
+}
+
+.card h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 6px;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    color: #111;
+    margin-bottom: 12px;
+}
+
+/* กรอบรูปภาพ */
+.img-container {
+    width: 100%;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ==========================================
+   5. Registration Form
+   ========================================== */
+.form-card {
+    height: 100%;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 3px;
+}
+
+/* ช่องกรอกข้อมูล */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="tel"],
+.form-group select {
+    width: 100%;
+    padding: 6px 10px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    font-size: 0.85rem;
+    background-color: #fff;
+    outline: none;
+    color: #333;
+}
+
+.form-group input::placeholder {
+    color: #a0a0a0;
+}
+
+/* Radio เพศ (แนวตั้ง) */
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-top: 2px;
+}
+
+.radio-group label,
+.checkbox-inline-group label,
+.checkbox-group label {
+    font-size: 0.85rem;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+/* Checkbox ข่าวสาร (แนวนอน) */
+.checkbox-inline-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 5px;
+}
+
+.checkbox-group {
+    margin-top: 12px;
+}
+
+/* ปุ่มสมัครสมาชิก */
+.btn-submit {
+    width: 100%;
+    background-color: #000080; /* สีน้ำเงินเข้มจัด */
+    color: #fff;
+    border: none;
+    padding: 9px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.btn-submit:hover {
+    background-color: #000055;
+}
+
+.privacy-notice {
+    font-size: 0.75rem;
+    color: #444;
+    text-align: center;
+    margin-top: 8px;
+}
+
+/* ==========================================
+   6. Footer Section (ปรับขนาด Footer)
+   ========================================== */
+.main-footer {
+    background-color: #0b0d14;
+    width: 100%;
+    max-height: 80px;    /* 1. ล็อคความสูงสูงสุดไว้ที่ 80px (ปรับลด/เพิ่มตามชอบ) */
+    overflow: hidden;     /* 2. ตัดส่วนเกินออก */
+    display: flex;
+    align-items: center;  /* 3. จัดรูปให้อยู่ตรงกลางแนวตั้ง */
+    justify-content: center;
+}
+
+.main-footer .img-container {
+    width: 100%;
+    height: 100%;
+}
+
+.main-footer .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;  /* 4. ย่อรูป Footer ให้เห็นละครบถ้วน ไม่โดนตัดขอบ และสัดส่วนไม่เบี้ยว */
+    display: block;
+}
+/* ==========================================
+   7. Responsive Support
+   ========================================== */
+@media (max-width: 850px) {
+    .container {
+        flex-direction: column;
+    }
+}

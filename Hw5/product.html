@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA Acoustics - Products</title>
+    <link rel="stylesheet" href="css/gridstyle.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="img-container">
+            <img src="images/header.jpg" alt="AURA Header">
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="product.html" class="nav-link active">Products</a>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="container">
+        
+        <!-- Left Column: Products Catalog -->
+        <section class="left-column">
+            
+            <!-- Product Section 1: Our Catalog -->
+            <div class="card">
+                <h2>Our Catalog</h2>
+                <p class="subtitle">Browse products and details below.</p>
+                <div class="img-container">
+                    <img src="images/product1.jpg" alt="AURA Headphone Catalog">
+                </div>
+            </div>
+
+            <!-- Product Section 2: Product Name -->
+            <div class="card">
+                <h2>Product Name</h2>
+                <p class="subtitle">Short description, price, and actions (add to cart, view details).</p>
+                <div class="img-container">
+                    <img src="images/product2.jpg" alt="Product Showcase">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Right Column: Registration Form -->
+        <aside class="right-column">
+            <div class="card form-card">
+                <h3>สมัครสมาชิก</h3>
+                
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="firstname">ชื่อ</label>
+                        <input type="text" id="firstname" placeholder="ชื่อจริง" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastname">นามสกุล</label>
+                        <input type="text" id="lastname" placeholder="นามสกุล" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">อีเมล</label>
+                        <input type="email" id="email" placeholder="example@domain.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">รหัสผ่าน</label>
+                        <input type="password" id="password" placeholder="อย่างน้อย 8 ตัวอักษร" minlength="8" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm-password">ยืนยันรหัสผ่าน</label>
+                        <input type="password" id="confirm-password" placeholder="ยืนยันรหัสผ่าน" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">เบอร์โทรศัพท์</label>
+                        <input type="tel" id="phone" placeholder="083-xxx-xxxx" required>
+                    </div>
+
+                    <!-- Gender Radio -->
+                    <div class="form-group">
+                        <label>เพศ</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="gender" value="male"> ชาย</label>
+                            <label><input type="radio" name="gender" value="female"> หญิง</label>
+                            <label><input type="radio" name="gender" value="unspecified"> ไม่ระบุ</label>
+                        </div>
+                    </div>
+
+                    <!-- Options Checkbox -->
+                    <div class="form-group checkbox-inline-group">
+                        <label><input type="checkbox" name="news">รับข่าวสาร</label>
+                        <label><input type="checkbox" name="promo"> โปรโมชั่น</label>
+                        <label><input type="checkbox" name="events"> กิจกรรม</label>
+                    </div>
+
+                    <!-- Select Dropdown (3 ประเภท) -->
+                    <div class="form-group">
+                        <label for="member-type">ประเภทสมาชิก</label>
+                        <select id="member-type" name="member_type">
+                            <option value="normal">Normal</option>
+                            <option value="vip">VIP</option>
+                            <option value="premium">Premium</option>
+                        </select>
+                    </div>
+
+                    <!-- Terms Agreement -->
+                    <div class="form-group checkbox-group">
+                        <label>
+                            <input type="checkbox" required> ยอมรับข้อกำหนดและเงื่อนไข
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-submit">สมัครสมาชิก</button>
+                    <p class="privacy-notice">เราจะเก็บข้อมูลของคุณเป็นความลับ</p>
+                </form>
+            </div>
+        </aside>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="img-container">
+            <img src="images/footer.jpg" alt="Footer">
+        </div>
+    </footer>
+
+</body>
+</html>
